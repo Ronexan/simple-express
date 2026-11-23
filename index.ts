@@ -17,7 +17,7 @@ app.get("/valid-email", (req: Request, res: Response) => {
   return res.status(200).send("Valid");
 });
 
-app.listen(process.env.PORT || 3000, (err) => {
+app.listen(process.env.PORT || 80, (err) => {
   if (err) console.log(err.message);
   console.log(`Listening on port ${process.env.PORT || 3000}`);
 });
